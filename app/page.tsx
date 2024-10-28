@@ -42,9 +42,9 @@ const Home = () => {
   const [showContent, setShowContent] = useState(false);
   const { theme, setTheme } = useContext(ThemeContext) || { theme: 'dark', setTheme: () => {} }; // Using context
   const [inputData, setInputData] = useState({ name: '', email: '', message: '' });
-  const [formError, setFormError] = useState('');
   const [confirmationMessage, setConfirmationMessage] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
+  const [isOpen, setIsOpen] = useState(false)
   
   const [faqData] = useState([
     { question: 'Apa itu Next.js?', answer: 'Next.js adalah framework React untuk membangun aplikasi web.' },
@@ -237,7 +237,6 @@ const Home = () => {
               Kirim
             </button>
             {confirmationMessage && <p className="mt-4 text-green-500">{confirmationMessage}</p>}
-            {formError && <p className="mt-4 text-red-500">{formError}</p>}
           </form>
         </Section>
         <Section title="Masukan" id="masukan" theme={theme}>
@@ -298,7 +297,7 @@ const Home = () => {
         </Section>
          <Section title="FAQ" id="faq" theme={theme}>
   {faqData.filter(faq => faq.question.toLowerCase().includes(searchTerm.toLowerCase())).map((faq, index) => {
-    const [isOpen, setIsOpen] = useState(false);
+    ;
 
     return (
       <div key={index} className="border-b border-gray-300 py-2">
