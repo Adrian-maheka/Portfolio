@@ -1,0 +1,148 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #1a1a1a; /* Warna latar belakang gelap */
+  color: #ffffff; /* Warna teks putih */
+}
+
+h1, h2, h3 {
+  color: #ffcc00; /* Warna teks kuning */
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.8); /* Transparan untuk header */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+nav ul {
+  list-style-type: none; /* Menghilangkan bullet list */
+}
+
+nav ul li {
+  transition: transform 0.3s;
+}
+
+nav ul li:hover {
+  transform: scale(1.05); /* Efek hover */
+}
+
+.section {
+  margin-top: 30px; /* Jarak antar section */
+}
+
+input, textarea {
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+}
+
+input:focus, textarea:focus {
+  border-color: #ffcc00; /* Warna border saat fokus */
+  outline: none; /* Menghilangkan outline default */
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem; /* Ukuran font header lebih kecil untuk perangkat mobile */
+  }
+
+  nav ul {
+    flex-direction: column; /* Menjadi kolom pada perangkat kecil */
+  }
+}
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+.header-background {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  background-image: url("/path/to/your/image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the tooltip above the text */
+  left: 50%;
+  margin-left: -60px; /* Center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.hidden {
+  display: none;
+}
+/* CSS tambahan untuk tampilan FAQ */
+.faq-question {
+  background-color: rgba(255, 215, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+  background-color: rgba(255, 215, 0, 0.2);
+}
+
+.faq-answer {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.faq-button {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.faq-button:hover {
+  transform: scale(1.2);
+}
+
+.faq-button-dark {
+  color: rgba(255, 215, 0, 1); /* Kuning untuk mode gelap */
+}
+
+.faq-button-light {
+  color: rgba(0, 123, 255, 1); /* Biru untuk mode terang */
+}
