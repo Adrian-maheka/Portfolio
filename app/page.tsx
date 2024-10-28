@@ -175,12 +175,24 @@ const Home = () => {
         </Section>
 
         <Section title="Pendidikan" id="pendidikan" theme={theme}>
-  <p className="mt-4">Saya sedang magang di PT Taksu Teknologi Indonesia.</p>
+  <p className="mt-4">
+    Saat ini, saya sedang menjalani magang di PT Taksu Teknologi Indonesia, 
+    di mana saya berkesempatan untuk memperdalam pengetahuan dan keterampilan 
+    dalam pengembangan perangkat lunak. Pengalaman ini sangat berharga untuk 
+    mengaplikasikan teori yang telah saya pelajari ke dalam praktik nyata.
+  </p>
 </Section>
 
 <Section title="Proyek" id="proyek" theme={theme}>
-  <p className="mt-4">Saya sedang mengerjakan proyek web ini.</p>
+  <p className="mt-4">
+    Saat ini, saya sedang mengerjakan proyek web ini sebagai bagian dari 
+    pembelajaran dan pengembangan keterampilan saya. Proyek ini tidak hanya 
+    menguji kreativitas saya, tetapi juga memberikan kesempatan untuk 
+    memahami berbagai aspek dalam pengembangan web, mulai dari desain 
+    hingga implementasi.
+  </p>
 </Section>
+
 
 <Section title="Sumber Belajar" id="sumber-belajar" theme={theme}>
   <ul className="list-disc list-inside mt-4">
